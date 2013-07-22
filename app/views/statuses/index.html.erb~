@@ -3,8 +3,6 @@
 	<h1>All statuses</h1>
 </div>
 
-<%=link_to "Post a new status", new_status_path, class: "btn btn-success" %>
-
 <% @statuses.each do |status| %>
 
 	<div class="status">
@@ -14,7 +12,7 @@
 			<%= link_to time_ago_in_words(status.created_at) + " ago", status %>
 				<span class="admin">
 	| <%= link_to "edit", edit_status_path(status) %> |
-	  <%= link_to "delete", status, method: :delete, data: {confirm: "Are you sure?"} %>
+	<%= link_to "delete", status, method: :delete, data: {confirm: "Are you sure?"} %>
 				</span>
 		</div>
 

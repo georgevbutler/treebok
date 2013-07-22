@@ -21,11 +21,6 @@
 	display: none;
 }
 
-.status.hover {
-	
-	background: #FAFAFA;
-}
-
 .status.hover .admin {
 	
 	display: inline;
