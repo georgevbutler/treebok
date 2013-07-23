@@ -11,7 +11,8 @@
 		<div class="navbar-inner">
 			<div class="container">
 				<a href="#" class="brand"> Huboob</a>
-				<li><%= link_to "All Statuses", statuses_path %></li>
+				<ul class="nav">
+					<li><%= link_to "All Statuses", statuses_path %></li>
 			</div>
 		</div>
 	</div>
